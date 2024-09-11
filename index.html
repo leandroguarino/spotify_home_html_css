@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link href="css/style.css" rel="stylesheet" />
+    <script>
+        function selecionarAlbum(album){
+            const tituloAlbum = document.getElementById("titulo-album")
+            tituloAlbum.innerText = album
+            window.location.href = "mamonas_assassinas.html"
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -23,13 +30,15 @@
     </header>
     <main>
         <section class="linha-album">
-            <div class="album">
+            <div class="album" onclick="selecionarAlbum('Rio Negro e Solimões')">
                 <div class="capa">
-                    <img src="images/album_mamonas.jpg" alt="Álbum dos mamonas assassinas" />
+                    <a href="mamonas_assassinas.html">
+                        <img src="images/album_mamonas.jpg" alt="Álbum dos mamonas assassinas" />
+                    </a>
                 </div>
                 <div class="descricao">Rio Negro e Solimões</div>
             </div>
-            <div class="album">
+            <div class="album" onclick="selecionarAlbum('Queen')">
                 <div class="capa">
                     <img src="images/album_mamonas.jpg" alt="Álbum dos mamonas assassinas" />
                 </div>
@@ -37,13 +46,13 @@
             </div>
         </section>
         <section class="linha-album">
-            <div class="album">
+            <div class="album" onclick="selecionarAlbum('Araketu')">
                 <div class="capa">
                     <img src="images/album_mamonas.jpg" alt="Álbum dos mamonas assassinas" />
                 </div>
                 <div class="descricao">Araketu</div>
             </div>
-            <div class="album">
+            <div class="album" onclick="selecionarAlbum('Mamonas assassinas')">
                 <div class="capa">
                     <img src="images/album_mamonas.jpg" alt="Álbum dos mamonas assassinas" />
                 </div>
@@ -51,13 +60,13 @@
             </div>
         </section>
         <section class="linha-album">
-            <div class="album">
+            <div class="album" onclick="selecionarAlbum('Linkin Park')">
                 <div class="capa">
                     <img src="images/album_mamonas.jpg" alt="Álbum dos mamonas assassinas" />
                 </div>
                 <div class="descricao">Linkin Park</div>
             </div>
-            <div class="album">
+            <div class="album" onclick="selecionarAlbum('Terrasamba')">
                 <div class="capa">
                     <img src="images/album_mamonas.jpg" alt="Álbum dos mamonas assassinas" />
                 </div>
@@ -65,19 +74,34 @@
             </div>
         </section>
         <section class="linha-album">
-            <div class="album">
+            <div class="album" onclick="selecionarAlbum('Los Hermanos')">
                 <div class="capa">
                     <img src="images/album_mamonas.jpg" alt="Álbum dos mamonas assassinas" />
                 </div>
                 <div class="descricao">Los Hermanos</div>
             </div>
-            <div class="album">
+            <div class="album" onclick="selecionarAlbum('Michel Teló')">
                 <div class="capa">
                     <img src="images/album_mamonas.jpg" alt="Álbum dos mamonas assassinas" />
                 </div>
                 <div class="descricao">Michel Teló</div>
             </div>
         </section>
+        <section id="titulo-saudade">
+            <h2>Suas músicas estão com saudade</h2>
+        </section>
+        <section id="slider">
+            <img src="images/album_mamonas.jpg" alt="Álbum dos Mamonas Assassinas" />
+            <img src="images/album_mamonas.jpg" alt="Álbum dos Mamonas Assassinas" />
+            <img src="images/album_mamonas.jpg" alt="Álbum dos Mamonas Assassinas" />
+            <img src="images/album_mamonas.jpg" alt="Álbum dos Mamonas Assassinas" />
+            <img src="images/album_mamonas.jpg" alt="Álbum dos Mamonas Assassinas" />
+            <img src="images/album_mamonas.jpg" alt="Álbum dos Mamonas Assassinas" />
+            <img src="images/album_mamonas.jpg" alt="Álbum dos Mamonas Assassinas" />
+        </section>
     </main>
+    <footer>
+        <p id="titulo-album">Álbum atual</p>
+    </footer>
 </body>
 </html>

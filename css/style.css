@@ -3,6 +3,8 @@ body{
     margin: 0px;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 540px;
+    margin:auto;
 }
 header{
     display: flex;
@@ -61,6 +63,7 @@ header{
     gap: 10px;
     background-color: rgb(42,42,42);
     border-radius: 10px;
+    cursor: pointer;
 }
 .capa{
     width: 140px;
@@ -79,4 +82,33 @@ header{
     padding: 10px;
     font-weight: bold;
     align-self: center;
+}
+#titulo-saudade{
+    padding: 10px;
+}
+#titulo-saudade h2{
+    color: #fff;
+}
+#slider{
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#slider img{
+    max-width: 250px;
+    height: auto;
+}
+#slider::-webkit-scrollbar{
+    display: none;
+}
+footer{
+    position: fixed;
+    background: #2a2a2a;
+    color: #fff;
+    border-radius: 20px;
+    bottom: 20px;
+    width: 540px;
+    text-align: center;
 }
